@@ -1,103 +1,63 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-     color: #030202;
-    line-height: 1.6;
-    text-align: center;
-}
-img {
-    width: 150px;
-    margin: 20px auto;
-}
-.topnav {
-    background-color:rgb(22, 139, 216);
-
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
 }
 
-.topnav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    font-size: 18px;
-    display: inline-block;
+h1 {
+  color: #333;
 }
 
-.head {
-    color: #d64f1a;
-    font-size: 28px;
+/* Button that changes color */
+#colorBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  margin: 15px;
 }
 
-.para {
-    max-width: 800px;
-    margin: 15px auto;
-    font-size: 18px;
-    color: #555;
-}
-#about {
-    background: #fff;
-    padding: 40px;
-    margin: 30px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    text-align: left;
+#colorBtn:hover {
+  opacity: 0.9;
 }
 
-#about h1 {
-    color: rgb(40, 142, 10);
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-#about p {
-    font-size: 18px;
-    color: #444;
-}
-#courses{
-    color: #750ea5;
-}
-#courses li {
-    color: #171717;
-    font-size: 18px;
-    margin: 8px 0;
+/* Calculator styling */
+.calculator {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  display: inline-block;
 }
 
-#submit-form {
-    background: #fff;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-    text-align: left;
+.calculator input {
+  margin: 5px;
+  padding: 8px;
+  font-size: 16px;
+  width: 120px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.calculator button {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #32CD32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-input[type="text"], 
-textarea, 
-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.calculator button:hover {
+  background-color: #28a428;
 }
 
-#button {
-    background-color: #32CD32;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#button:hover {
-    background-color: #28a428;
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
