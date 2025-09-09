@@ -1,63 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 30px;
-  background-color: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25,12,41);
+}
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 400%; 
+    transition: margin-left 0.5s ease;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+}
+input {
+    display: none;
 }
 
-h1 {
-  color: #333;
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.dots label {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: solid #fff 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+.dots label:hover {
+    background: #fff;
 }
 
-/* Button that changes color */
-#colorBtn {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-  margin: 15px;
+
+#img1:checked ~ .images {
+    margin-left: 0;
+}
+#img2:checked ~ .images {
+    margin-left: -100%;
+}
+#img3:checked ~ .images {
+    margin-left: -200%;
+}
+#img4:checked ~ .images {
+    margin-left: -300%;
+}
+#img1:checked ~ .dots label[for="img1"],
+#img2:checked ~ .dots label[for="img2"],    
+#img3:checked ~ .dots label[for="img3"],
+#img4:checked ~ .dots label[for="img4"] {
+    background: #fff;
 }
 
-#colorBtn:hover {
-  opacity: 0.9;
-}
-
-/* Calculator styling */
-.calculator {
-  margin-top: 30px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-  display: inline-block;
-}
-
-.calculator input {
-  margin: 5px;
-  padding: 8px;
-  font-size: 16px;
-  width: 120px;
-}
-
-.calculator button {
-  padding: 8px 15px;
-  font-size: 16px;
-  background-color: #32CD32;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.calculator button:hover {
-  background-color: #28a428;
-}
-
-#result {
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 18px;
-}
